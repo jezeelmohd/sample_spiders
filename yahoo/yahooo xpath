@@ -1,0 +1,13 @@
+yahooo xpath
+
+http://in.search.yahoo.com/search?p=DR+MONA+BHAN
+
+next pages
+http://in.search.yahoo.com/search?p=DR+MONA+BHAN&b=11
+http://in.search.yahoo.com/search?p=DR+MONA+BHAN&b=21
+http://in.search.yahoo.com/search?p=DR+MONA+BHAN&b=31
+
+all results in :	div[@id="web"]/ol/li
+
+
+title			:.select("div/div[1]/h3/a").extract()

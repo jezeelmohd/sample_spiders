@@ -1,0 +1,12 @@
+total rating :
+				//span[@class='reviewCount']/p/span[@class='rating']/span/span/@title
+no of reviews: //span[@class='reviewCount']/p/span[@class='count']/text()
+
+
+all reviews in :
+				//div[id='reviews']/div
+
+		rating 			: span[@class='rating']/span/@title
+		date			:span[@class='review_date']/span/text()
+		name			:div[@class='reviewer vcard']/div/span[@class='review_name fn']/text()
+		review text		:div[@class='review_text description']/text()

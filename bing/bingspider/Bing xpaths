@@ -1,0 +1,13 @@
+Bing xpaths
+
+total results in :
+					//div[@id='results'/ul/li]
+
+title				results[1].select("div/div/div[1]/h3/a").extract()
+url					.select("div/div/div[1]/h3/a/@href").extract()
+summary				.select("div/div/p").extract()
+
+description			.select("div/div/ul/li").extract()
+					.select("div/div/ul/li/a").extract()
+
+rating				div/div/ul/li/span/@title
