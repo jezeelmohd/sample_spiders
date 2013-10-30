@@ -1,0 +1,33 @@
+
+review url	:http://www.yelp.com/biz/david-j-macgregor-md-san-francisco
+
+all reviews in 	://div[@id='reviews-other']/ul/li
+
+	aka	://*[@id="reviews-other"]/ul
+		:
+
+reviewr name	:.select("div/div[1]/div/ul[2]/li/a/text()").extract()
+
+reviewer url	:div/div[1]/div/ul[2]/li/a
+reviewer place	:div/div[1]/p
+
+rating 		:div/div[2]/div[1]/div/div/i
+		:.select("div/div[2]/div[1]/div/div/i/@title").extract()
+
+review date	:div/div[2]/div[1]/span[1]
+		:.select("div/div[2]/div[1]/span[1]/text()").extract()
+
+
+review text	:div/div[2]/p
+		:.select("div/div[2]/p/text()").extract()
+
+
+next page	:http://www.yelp.com/biz/david-j-macgregor-md-san-francisco?start=40
+		http://www.yelp.com/biz/david-j-macgregor-md-san-francisco?start=80
+
+total no of reviews	:hxs.select("//div[@id='reviews-other']/h3/text()").extract()
+
+
+
+		:.select("//div[@id='paginationControls']/table/tr/td/a")
+no need		://div[@id='paginationControls']/table/tr/td/a")

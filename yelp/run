@@ -1,0 +1,1 @@
+scrapy crawl yelpspider -a source=$1 -a eid=$2
