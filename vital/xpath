@@ -1,0 +1,25 @@
+http://www.vitals.com/doctors/Dr_Gregory_Yanish/profile
+
+
+http://www.vitals.com/doctors/Dr_Gregory_Yanish/reviews
+
+rating			: //span[@itemprop='ratingValue']/text()
+
+total reviews are in 	: //div[@id='reviewspane']/div
+			
+			review star	:div[@class='rating']/span[1]/ul/li/text()
+
+			review author	:div[@class='header']/span[@class='reviewer']/text()
+
+			review title	:div[@class='rating']/span[@class='summary']/text()
+
+			reveiew date	:div[@class='header']/span[@class='date c_date dtreviewed']/span/text()
+
+			reviewtext		:p[@class='description']/text()
+
+
+			awards		://ul[@class='awards']/li
+
+			hxs.select("div/@data-title").extract()
+
+					
